@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Celebrate - PinkPals</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/style.css') }}"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      type="module"
+      src="https://unpkg.com/@splinetool/viewer@1.4.0/build/spline-viewer.js"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li class="logo">
+            <a href="#">
+              <img
+                src="{{ url_for('static', filename='images/sun.png') }}"
+                alt="Logo"
+              />
+              <p>PinkPals</p>
+            </a>
+          </li>
+          <li class="item"><a href="#">Home</a></li>
+          <li><a href="{{ url_for('celebrate') }}">Celebrate Now !</a></li>
+          <li><a href="{{url_for('posts')}}">Posts</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="intro">
+        <div class="avatar">
+          <spline-viewer
+            loading-anim-type="none"
+            url="https://prod.spline.design/Su0qUr8LUR4YxNoC/scene.splinecode"
+          ></spline-viewer>
+        </div>
+        <div class="intro-text">
+          <h1>動動小手，祝芸禾生日快樂吧！！🥹</h1>
+        </div>
+      </section>
+      <section class="bio">
+        <h2>一人一句，匿名祝賀～</h2>
+        <p>這是通往匿名祝賀的神秘通道！</p>
+        <div class="work">
+          <p class="finger">👇🏻👇🏻👇🏻👇🏻👇🏻</p>
+          <a href="{{url_for('celebrate')}}" class="portfolio-button">Now！</a>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

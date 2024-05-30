@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Posts - PinkPals</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/style.css') }}"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li class="logo">
+            <a href="{{ url_for('home') }}">
+              <img
+                src="{{ url_for('static', filename='images/sun.png') }}"
+                alt="Logo"
+              />
+              <p>PinkPals</p>
+            </a>
+          </li>
+          <li class="item"><a href="{{url_for('home')}}">Home</a></li>
+          <li><a href="{{ url_for('celebrate') }}">Celebrate Now!</a></li>
+          <li><a href="#">Posts</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="posts">
+        <h1>好友留言板 ヽ(・∀・)ﾉ</h1>
+        <div class="posts-wrapper">
+          <div id="posts-container" class="posts-container"></div>
+        </div>
+      </section>
+    </main>
+    <script src="{{ url_for('static', filename='js/posts.js') }}"></script>
+  </body>
+</html>
