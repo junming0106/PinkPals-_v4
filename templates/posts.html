@@ -13,6 +13,10 @@
       href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@700&display=swap"
       rel="stylesheet"
     />
+    <script
+      type="module"
+      src="https://unpkg.com/@splinetool/viewer@1.4.5/build/spline-viewer.js"
+    ></script>
   </head>
   <body>
     <header>
@@ -34,6 +38,13 @@
       </nav>
     </header>
     <main>
+      <div class="spline-container">
+        <spline-viewer
+          hint
+          loading-anim-type="spinner-small-dark"
+          url="https://prod.spline.design/lKSmEMicACmNRTgb/scene.splinecode"
+        ></spline-viewer>
+      </div>
       <section class="posts">
         <h1>好友留言板 ヽ(・∀・)ﾉ</h1>
         <div class="posts-wrapper">
