@@ -513,7 +513,7 @@ send-button:hover {
   .card {
     min-width: 200px;
     max-width: 200px;
-    height: 300px; /* 進一步放大posts的訊息 */
+    height: 500px; /* 進一步放大posts的訊息 */
   }
 
   .celebrate {
@@ -532,7 +532,7 @@ send-button:hover {
   .spline-container {
     max-width: 200px; /* 調整手機模式下的最大寬度 */
     margin-top: -50px; /* 調整手機模式下的上移距離 */
-    margin-left: -30px; /* 調整手機模式下的左移距離 */
+    /* margin-left: -30px; 調整手機模式下的左移距離 */
   }
 
   .spline-container spline-viewer {
