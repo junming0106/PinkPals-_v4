@@ -513,7 +513,7 @@ send-button:hover {
   .card {
     min-width: 200px;
     max-width: 200px;
-    height: 500px; /* 進一步放大posts的訊息 */
+    height: 700px; /* 進一步放大posts的訊息 */
   }
 
   .celebrate {
